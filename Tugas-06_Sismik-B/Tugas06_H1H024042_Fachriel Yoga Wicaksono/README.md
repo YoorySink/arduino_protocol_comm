@@ -4,7 +4,7 @@ fachriel yoga wicaksono
 H1H024042
 B
 ```
-# Library & Inisialisasi LCD
+## Library & Inisialisasi LCD
 ```
 #include <Adafruit_LiquidCrystal.h>
 Adafruit_LiquidCrystal lcd(0);
@@ -17,7 +17,7 @@ String quote = "Jatuh 7 kali bangkit 8 kali";
 ```
 > Menyimpan kalimat yang nanti akan ditampilkan di LCD <br>
 Tipe String → bisa pakai .length() untuk menghitung panjang teks
-# Fungsi setup()
+## Fungsi setup()
 ```
 void setup() {
   lcd.begin(16, 2);
@@ -30,7 +30,7 @@ void setup() {
 > - lcd.setBacklight(1) → menyalakan lampu LCD
 > - lcd.setCursor(5, 0) → posisi kolom ke-5, baris pertama
 > - lcd.print("QUOTE") → menampilkan judul "QUOTE" di baris atas
-#Fungsi loop() (Inti Program
+## Fungsi loop() (Inti Program
 ```
 void loop() {
   int panjang = quote.length();
