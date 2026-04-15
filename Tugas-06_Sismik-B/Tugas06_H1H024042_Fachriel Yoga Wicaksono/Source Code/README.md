@@ -21,9 +21,9 @@ void setup() {
 }
 ```
 > - lcd.begin(16, 2) → LCD ukuran 16 kolom, 2 baris
-- lcd.setBacklight(1) → menyalakan lampu LCD
-- lcd.setCursor(5, 0) → posisi kolom ke-5, baris pertama
-- lcd.print("QUOTE") → menampilkan judul "QUOTE" di baris atas
+> - lcd.setBacklight(1) → menyalakan lampu LCD
+> - lcd.setCursor(5, 0) → posisi kolom ke-5, baris pertama
+> - lcd.print("QUOTE") → menampilkan judul "QUOTE" di baris atas
 #Fungsi loop() (Inti Program
 ```
 void loop() {
@@ -35,13 +35,12 @@ void loop() {
 for (int i = 15; i >= -panjang; i--) {
 ```
 > - i = 15 → mulai dari kanan layar (kolom paling kanan)
-- i >= -panjang → berhenti saat teks sudah keluar semua ke kiri
-- i-- → bergerak ke kiri (efek jalan)
+> - i >= -panjang → berhenti saat teks sudah keluar semua ke kiri
+> - i-- → bergerak ke kiri (efek jalan)
 # Meampilkan teks
 ```
   lcd.setCursor(i, 1);
   lcd.print(quote);
 ```
-> - lcd.setCursor(0,1) → (tidak terlalu perlu di sini, redundant)
-- lcd.setCursor(i,1) → menggeser posisi teks sesuai nilai i
-- lcd.print(quote) → mencetak teks
+> - lcd.setCursor(i,1) → menggeser posisi teks sesuai nilai i
+> - lcd.print(quote) → mencetak teks
